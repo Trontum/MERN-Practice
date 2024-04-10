@@ -1,0 +1,19 @@
+.booksCard{
+    display:inline-block;
+    width:100px;
+    height:170px;
+    text-align: center;
+    padding:5px;
+    margin:10px;
+    border:2px solid;
+    vertical-align: top;
+    cursor: pointer;
+}
+.dark-theme{
+    background-color: chocolate;
+    /* color:chocolate */
+}
+.light-theme{
+    background-color: antiquewhite;
+    /* color: antiquewhite; */
+}

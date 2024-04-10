@@ -1,0 +1,14 @@
+<section
+  [routerLink]="'/book-details/' + book.title"
+  [ngClass]="theme == 'dark' ? 'dark-theme' : 'light-theme'"
+  class="booksCard"
+  *ngFor="let book of bookList"
+>
+  <img
+    [src]="book.thumbnailUrl"
+    [alt]="book.title"
+    height="80px"
+    width="80px"
+  />
+  <p [ngStyle]="{ color: fontColor }">{{ book.title }}</p>
+</section>

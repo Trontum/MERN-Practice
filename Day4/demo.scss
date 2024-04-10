@@ -1,0 +1,146 @@
+@import "mixins";
+
+
+
+$color:blue;
+$align:center;
+$background:beige;
+p{
+    color: $color;
+    text-align: $align;
+    background-color: $background;
+    $num1:10;
+    $num2:20;
+    @if ($num1+$num2<50){
+        background-color: blueviolet;
+    }
+    @else{
+        background-color: aquamarine;
+    }
+}
+table{
+    border: 5px;
+    tr{
+        background-color: blueviolet;
+        td{
+            text-align: $align;
+            width: 100px;
+            height: 30px;
+            color: white;
+            font-size: 10px;
+        }
+    }
+}
+h1{
+    background: {
+        color:bisque;
+
+    }
+    margin: {
+        top:10px;
+        right: 20px;
+    }
+    text: {
+        align:center;
+        shadow: black;
+        decoration:underline;
+    }
+    font: {
+        size:30px;
+        weight:bold;
+        style:ariel;
+    }
+}
+
+.btn1{
+    @include mixin12();
+    background-color: green;
+}
+.btn2{
+    @include mixin12();
+    background-color: purple;
+}
+.btn3{
+    @include mixin34(white,black);
+}
+.btn4{
+    @include mixin34(chocolate, black);
+}
+// @function multiplication($num1,$num2){
+//     @return ($num1*$num2);
+// }
+// @function division($num1,$num2){
+//     @return (calc($num1/$num2));
+// }
+// .math{
+//     background-color: chocolate;
+//     height:multiplication(10px,10 );
+//     width:division(1000px,4 );
+// }
+
+.button1{
+    color:white;
+    background-color: black;
+    border-radius: 10%;
+    width:100px;
+    height:50px;
+}
+.button2{
+    @extend .button1;
+    // background-color: green;
+    background-color: blueviolet;
+
+}
+
+// .d1{
+//     color: lighten($color: black, $amount: 20%);
+// }
+// .d2{
+//     color: darken($color: orange, $amount: 20%);
+// }
+// .d3{
+//     color:saturate($color: yellow, $amount: 20%);
+// }
+// .d4{
+//     color:desaturate($color: purple, $amount: 20%)
+// }
+// .d5{
+//     color:invert($color: purple);
+// }
+// .d6{
+//     color:complement($color:blue);
+// }
+
+
+// .d7{
+//     height:ceil(71.17px);
+// }
+// .d8{
+//     height:floor(71.17px);
+// }
+// .d9{
+//     height: round(71.71px);
+// }
+// .d10{
+//     height:percentage(0.8);
+// }
+
+
+$i:1;
+@while ( $i<11){
+    .d#{$i}{
+        height:100px;
+        width:100px*$i;
+        background-color:darken($color: orange, $amount: 10*$i);
+    }
+    $i:$i+1;
+}
+
+
+$menu: (home, about, contact, services);
+ 
+@each $item in $menu {
+  .#{$item} {
+    background: url("/img/#{$item}.png");
+  }
+}

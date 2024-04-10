@@ -1,0 +1,154 @@
+p {
+  color: blue;
+  text-align: center;
+  background-color: beige;
+  background-color: blueviolet;
+}
+
+table {
+  border: 5px;
+}
+table tr {
+  background-color: blueviolet;
+}
+table tr td {
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 10px;
+}
+
+h1 {
+  background-color: bisque;
+  margin-top: 10px;
+  margin-right: 20px;
+  text-align: center;
+  text-shadow: black;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: ariel;
+}
+
+.btn1 {
+  display: inline-block;
+  border-radius: 5%;
+  padding: 16px 32px;
+  color: white;
+  background-color: green;
+}
+
+.btn2 {
+  display: inline-block;
+  border-radius: 5%;
+  padding: 16px 32px;
+  color: white;
+  background-color: purple;
+}
+
+.btn3 {
+  display: inline-block;
+  border-radius: 5%;
+  padding: 16px 32px;
+  color: white;
+  background-color: black;
+}
+
+.btn4 {
+  display: inline-block;
+  border-radius: 5%;
+  padding: 16px 32px;
+  color: chocolate;
+  background-color: black;
+}
+
+.button1, .button2 {
+  color: white;
+  background-color: black;
+  border-radius: 10%;
+  width: 100px;
+  height: 50px;
+}
+
+.button2 {
+  background-color: blueviolet;
+}
+
+.d1 {
+  height: 100px;
+  width: 100px;
+  background-color: #cc8400;
+}
+
+.d2 {
+  height: 100px;
+  width: 200px;
+  background-color: #996300;
+}
+
+.d3 {
+  height: 100px;
+  width: 300px;
+  background-color: #664200;
+}
+
+.d4 {
+  height: 100px;
+  width: 400px;
+  background-color: #332100;
+}
+
+.d5 {
+  height: 100px;
+  width: 500px;
+  background-color: black;
+}
+
+.d6 {
+  height: 100px;
+  width: 600px;
+  background-color: black;
+}
+
+.d7 {
+  height: 100px;
+  width: 700px;
+  background-color: black;
+}
+
+.d8 {
+  height: 100px;
+  width: 800px;
+  background-color: black;
+}
+
+.d9 {
+  height: 100px;
+  width: 900px;
+  background-color: black;
+}
+
+.d10 {
+  height: 100px;
+  width: 1000px;
+  background-color: black;
+}
+
+.home {
+  background: url("/img/home.png");
+}
+
+.about {
+  background: url("/img/about.png");
+}
+
+.contact {
+  background: url("/img/contact.png");
+}
+
+.services {
+  background: url("/img/services.png");
+}
+
+/*# sourceMappingURL=style.css.map */

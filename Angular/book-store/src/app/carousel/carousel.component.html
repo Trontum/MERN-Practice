@@ -1,0 +1,14 @@
+<h3>{{ title }}</h3>
+<section>
+  <button style="display: inline-block" (click)="prev()">&lt;</button>
+  <img
+    [src]="imageList[index].image"
+    [alt]="imageList[index].description"
+    height="100"
+    width="200"
+  />
+  <p>{{ imageList[index].description }}</p>
+  <button style="display: inline-block; margin-bottom: 200px" (click)="next()">
+    &gt;
+  </button>
+</section>
